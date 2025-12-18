@@ -15,7 +15,7 @@ project/
 └── README.md
 
 ```
-Código HTML (index.html):
+#Código HTML (index.html):
 ```html
 <header>
   <h1>Welcome to My Website</h1>
@@ -31,7 +31,7 @@ Código HTML (index.html):
 
 Este HTML utiliza una estructura semántica correcta (header, nav, ul, li). El menú está preparado para navegación interna mediante anchors y el código es limpio y fácil de escalar.
 
-Código CSS (index.css):
+##Código CSS (index.css):
 ```css
 * {
   box-sizing: border-box;
@@ -69,4 +69,132 @@ a {
   color: #000000;
 }
 ```
-Proyecto base funcional para practicar HTML semántico y Flexbox, pensado como punto de partida para futuros desarrollos Front-End.
+
+```html
+<main>
+  <section class="home">
+    <h2>Home Section</h2>
+    <p>This is the home section of the website.</p>
+  </section>
+
+  <section class="about">
+    <h2>About Section</h2>
+    <p>This section contains information about us.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Section</h2>
+    <p>This section provides contact information.</p>
+  </section>
+</main>
+```
+Estructura semántica correcta usando main y section, ideal para SEO y accesibilidad. Cada sección representa un bloque independiente del contenido.
+
+##Estilos CSS del layout principal
+
+Se utiliza Flexbox para alinear horizontalmente las secciones y mantener un espaciado consistente.
+
+```css
+main {
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  color: #000000;
+}
+```
+##Estilos y animaciones por sección
+
+##Home
+```css
+.home {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px rgb(0, 0, 0, 0.7);
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+}
+
+.home:hover {
+  transform: scale(1.1);
+}
+
+```
+
+##About
+```css
+.about {
+  width: 220px;
+  height: 220px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px rgb(0, 0, 0, 0.7);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.about:hover {
+  transform: translateY(-10px);
+}
+```
+##Contact + animación 3D
+
+```css
+.contact {
+  width: 240px;
+  height: 240px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px rgb(0, 0, 0, 0.7);
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+}
+
+.contact:hover {
+  transform: scale(1.1);
+  animation: gira 2s linear infinite;
+}
+
+```
+
+##Keyframes
+
+```css
+
+@keyframes gira {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+```
