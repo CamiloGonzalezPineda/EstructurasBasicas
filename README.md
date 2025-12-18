@@ -69,7 +69,7 @@ a {
   color: #000000;
 }
 ```
-
+Estructura semántica correcta usando main y section, ideal para SEO y accesibilidad. Cada sección representa un bloque independiente del contenido.
 ```html
 <main>
   <section class="home">
@@ -88,9 +88,9 @@ a {
   </section>
 </main>
 ```
-Estructura semántica correcta usando main y section, ideal para SEO y accesibilidad. Cada sección representa un bloque independiente del contenido.
 
-##Estilos CSS del layout principal
+
+# Estilos CSS del layout principal
 
 Se utiliza Flexbox para alinear horizontalmente las secciones y mantener un espaciado consistente.
 
@@ -109,9 +109,9 @@ h2 {
   color: #000000;
 }
 ```
-##Estilos y animaciones por sección
+# Estilos y animaciones por sección
 
-##Home
+# Home
 ```css
 .home {
   width: 200px;
@@ -135,7 +135,7 @@ h2 {
 
 ```
 
-##About
+# About
 ```css
 .about {
   width: 220px;
@@ -157,7 +157,7 @@ h2 {
   transform: translateY(-10px);
 }
 ```
-##Contact + animación 3D
+## Contact + animación 3D
 
 ```css
 .contact {
@@ -183,7 +183,7 @@ h2 {
 
 ```
 
-##Keyframes
+# Keyframes
 
 ```css
 
