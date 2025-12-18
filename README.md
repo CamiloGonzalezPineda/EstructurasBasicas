@@ -1,12 +1,9 @@
 # Simple Header Website
 
-Proyecto básico de una página web, navegación y estilos CSS aplicados para una presentación limpia y centrada.
+Proyecto básico de una página web con un header, menú de navegación y estilos CSS aplicados para una presentación limpia y centrada.
 
----
-
-## 📁 Estructura del proyecto
-
-```bash
+Estructura del proyecto:
+```
 project/
 ├── .vscode/
 ├── src/
@@ -15,16 +12,13 @@ project/
 ├── js/
 │   └── index.js
 ├── index.html
-├── README.md
+└── README.md
 
-
-📄 index.html
-Este archivo contiene la estructura principal del sitio web.
-Incluye un encabezado (header) con un título y un menú de navegación.
 ```
+Código HTML (index.html):
+```html
 <header>
   <h1>Welcome to My Website</h1>
-
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -34,14 +28,11 @@ Incluye un encabezado (header) con un título y un menú de navegación.
   </nav>
 </header>
 ```
-🔎 Detalles importantes
-Se utiliza una estructura semántica correcta (header, nav, ul, li)
-El menú está preparado para navegación interna mediante anchors
-El HTML es limpio y fácil de escalar
 
-🎨 styles.css
-Este archivo define los estilos globales del sitio y controla la apariencia del header y la navegación.
-```
+Este HTML utiliza una estructura semántica correcta (header, nav, ul, li). El menú está preparado para navegación interna mediante anchors y el código es limpio y fácil de escalar.
+
+Código CSS (index.css):
+```css
 * {
   box-sizing: border-box;
   margin: 0;
@@ -78,3 +69,4 @@ a {
   color: #000000;
 }
 ```
+Proyecto base funcional para practicar HTML semántico y Flexbox, pensado como punto de partida para futuros desarrollos Front-End.
