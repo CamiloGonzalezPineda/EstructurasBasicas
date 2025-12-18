@@ -21,7 +21,7 @@ project/
 📄 index.html
 Este archivo contiene la estructura principal del sitio web.
 Incluye un encabezado (header) con un título y un menú de navegación.
-
+```
 <header>
   <h1>Welcome to My Website</h1>
 
@@ -33,7 +33,7 @@ Incluye un encabezado (header) con un título y un menú de navegación.
     </ul>
   </nav>
 </header>
-
+```
 🔎 Detalles importantes
 Se utiliza una estructura semántica correcta (header, nav, ul, li)
 El menú está preparado para navegación interna mediante anchors
@@ -41,7 +41,7 @@ El HTML es limpio y fácil de escalar
 
 🎨 styles.css
 Este archivo define los estilos globales del sitio y controla la apariencia del header y la navegación.
-
+```
 * {
   box-sizing: border-box;
   margin: 0;
@@ -77,3 +77,4 @@ a {
   text-decoration: none;
   color: #000000;
 }
+```
