@@ -1,0 +1,21 @@
+
+## Tecnologías
+- **HTML5**: Para la estructura del contenido.
+- **CSS3**: Para el diseño y estilos visuales.
+- **Flexbox y Grid**: Para layout moderno y responsivo.
+
+## Uso
+1. Clonar o descargar el repositorio.
+2. Abrir `index.html` en un navegador web.
+3. Editar los archivos HTML y CSS según tus necesidades.
+
+## Buenas prácticas incluidas
+- Separación de estructura (HTML) y estilos (CSS).
+- Uso de clases y selectores claros.
+- Diseño responsivo usando Flexbox y Grid.
+- Organización de archivos y carpetas limpia y escalable.
+
+## Próximos pasos
+- Agregar JavaScript para interactividad.
+- Implementar un sistema de navegación más complejo.
+- Mejorar el diseño con animaciones y transiciones CSS.
