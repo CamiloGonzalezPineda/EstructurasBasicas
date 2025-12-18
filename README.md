@@ -15,7 +15,7 @@ project/
 └── README.md
 
 ```
-#Código HTML (index.html):
+## Código HTML (index.html):
 ```html
 <header>
   <h1>Welcome to My Website</h1>
@@ -31,7 +31,7 @@ project/
 
 Este HTML utiliza una estructura semántica correcta (header, nav, ul, li). El menú está preparado para navegación interna mediante anchors y el código es limpio y fácil de escalar.
 
-##Código CSS (index.css):
+## Código CSS (index.css):
 ```css
 * {
   box-sizing: border-box;
@@ -90,7 +90,7 @@ Estructura semántica correcta usando main y section, ideal para SEO y accesibil
 ```
 
 
-# Estilos CSS del layout principal
+## Estilos CSS del layout principal
 
 Se utiliza Flexbox para alinear horizontalmente las secciones y mantener un espaciado consistente.
 
@@ -111,7 +111,7 @@ h2 {
 ```
 # Estilos y animaciones por sección
 
-# Home
+## Home
 ```css
 .home {
   width: 200px;
@@ -135,7 +135,7 @@ h2 {
 
 ```
 
-# About
+## About
 ```css
 .about {
   width: 220px;
@@ -183,7 +183,7 @@ h2 {
 
 ```
 
-# Keyframes
+## Keyframes
 
 ```css
 
@@ -197,4 +197,99 @@ h2 {
   }
 }
 
+```
+
+## Estructura HTML (sección desplegable con botón)
+
+```html
+<section class="desplegarse">
+  <button class="abriendo" id="click">Clickeame</button>
+  <div class="desplegan" id="desplegar">
+    <p>Home</p>
+    <p>About</p>
+    <p>Contact</p>
+  </div>
+</section>
+```
+## Estilos
+
+```css
+.desplegarse {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  color: #e70606;
+  overflow: hidden;
+  padding: 20px;
+  gap: 10px;
+}
+
+.desplegan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 0px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
+  color: #000000;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.desplegan.abrir {
+  height: 200px;
+}
+
+.abriendo {
+  width: 120px;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+```
+
+## JavaScript para activar el menú
+
+```js
+const click = document.getElementById('click');
+const abrir = document.getElementById('desplegar');
+
+click.addEventListener('click', () => {
+  abrir.classList.toggle('abrir');
+});
+
+```
+
+## Footer
+```html
+<footer>
+  <p>&copy; 2024 My Website</p>
+</footer>
+
+```
+
+## Estilos Fotter
+
+```css
+footer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
 ```
